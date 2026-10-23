@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Calendar, Users, Award, Shield, CheckCircle, MapPin, ArrowRight } from 'lucide-react';
 import { SITE_INFO, SERVICE_LOCATIONS } from '@/lib/constants';
 import { FadeIn, StaggerContainer, StaggerItem, EtrmParticles, AnimatedCounter } from '@/components/animations';
+import { getAssetPath } from '@/lib/utils';
 
 export const metadata: Metadata = {
   title: 'About Us',
@@ -42,7 +43,7 @@ export default function AboutPage() {
             <FadeIn direction="right" distance={30} className="lg:col-span-5">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[3/4] bg-gray-100 dark:bg-[#0E162B] group">
                 <Image
-                  src="/images/pastor-samselvaraj.jpg"
+                  src={getAssetPath('/images/pastor-samselvaraj.jpg')}
                   alt="Bishop Dr. J. Sam Selvaraj"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"

@@ -9,6 +9,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { MINISTRIES_DATA, SITE_INFO } from '@/lib/constants';
 import { ScrollProgressBar } from '@/components/animations';
 import { ThemeToggle } from '@/components/theme/ThemeToggle';
+import { getAssetPath } from '@/lib/utils';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -78,7 +79,7 @@ export default function Navbar() {
             >
               {/* Light mode: crisp, high-contrast prominent logo */}
               <Image
-                src="/images/chruch-logo.svg"
+                src={getAssetPath('/images/chruch-logo.svg')}
                 alt="End Time Revival Mission Church Logo"
                 width={80}
                 height={120}
@@ -87,7 +88,7 @@ export default function Navbar() {
               />
               {/* Dark mode: radiant luminous gold logo */}
               <Image
-                src="/images/chruch-logo-gold.svg"
+                src={getAssetPath('/images/chruch-logo-gold.svg')}
                 alt="End Time Revival Mission Church Logo"
                 width={80}
                 height={120}

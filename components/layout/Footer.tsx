@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { MapPin, Mail, Phone, ChevronUp, Youtube, Instagram, Facebook, Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { SITE_INFO, MINISTRIES_DATA } from '@/lib/constants';
+import { getAssetPath } from '@/lib/utils';
 
 export default function Footer() {
   return (
@@ -21,7 +22,7 @@ export default function Footer() {
                 className="shrink-0"
               >
                 <Image
-                  src="/images/chruch-logo-gold.svg"
+                  src={getAssetPath('/images/chruch-logo-gold.svg')}
                   alt="End Time Revival Mission Logo"
                   width={80}
                   height={120}

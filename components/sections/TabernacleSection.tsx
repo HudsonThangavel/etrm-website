@@ -7,6 +7,7 @@ import { Building2, Heart, Users } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { SITE_INFO } from '@/lib/constants';
 import { FadeIn, AnimatedCounter } from '@/components/animations';
+import { getAssetPath } from '@/lib/utils';
 
 export default function TabernacleSection() {
   return (
@@ -80,7 +81,7 @@ export default function TabernacleSection() {
                 className="relative rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-white/10 aspect-[16/9] bg-gray-100 dark:bg-[#0E162B] group"
               >
                 <Image
-                  src="/images/tabernacle-exterior.jpg"
+                  src={getAssetPath('/images/tabernacle-exterior.jpg')}
                   alt="Architectural model of the planned Ruah tabernacle building exterior"
                   fill
                   className="object-cover group-hover:scale-106 transition-transform duration-700"
@@ -102,7 +103,7 @@ export default function TabernacleSection() {
                 className="relative rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-white/10 aspect-[16/9] bg-gray-100 dark:bg-[#0E162B] group"
               >
                 <Image
-                  src="/images/tabernacle-interior.jpg"
+                  src={getAssetPath('/images/tabernacle-interior.jpg')}
                   alt="Interior render of the planned Ruah tabernacle with worshippers"
                   fill
                   className="object-cover group-hover:scale-106 transition-transform duration-700"

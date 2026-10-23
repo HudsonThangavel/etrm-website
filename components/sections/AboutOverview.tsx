@@ -7,6 +7,7 @@ import { Calendar, Users, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { SITE_INFO } from '@/lib/constants';
 import { FadeIn, AnimatedCounter, HoverCard } from '@/components/animations';
+import { getAssetPath } from '@/lib/utils';
 
 export default function AboutOverview() {
   return (
@@ -21,7 +22,7 @@ export default function AboutOverview() {
               className="relative rounded-3xl overflow-hidden shadow-xl aspect-[3/4] bg-gray-100 dark:bg-[#0E162B] group"
             >
               <Image
-                src="/images/pastor-samselvaraj.jpg"
+                src={getAssetPath('/images/pastor-samselvaraj.jpg')}
                 alt="Bishop Dr. J. Sam Selvaraj, Founder & Senior Pastor of End Time Revival Mission"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"

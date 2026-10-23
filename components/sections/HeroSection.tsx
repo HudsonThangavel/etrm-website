@@ -7,6 +7,7 @@ import { Sparkles, Heart, ArrowRight, ShieldCheck } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { SITE_INFO } from '@/lib/constants';
 import { EtrmParticles, AnimatedCounter } from '@/components/animations';
+import { getAssetPath } from '@/lib/utils';
 
 export default function HeroSection() {
   return (
@@ -133,7 +134,7 @@ export default function HeroSection() {
               {/* Main Worship Image */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-[#0E162B] aspect-[4/3] bg-gray-100 dark:bg-[#0E162B] group">
                 <Image
-                  src="/images/hero-worship.jpg"
+                  src={getAssetPath('/images/hero-worship.jpg')}
                   alt="Believers gathered for a End Time Revival Mission worship service"
                   fill
                   priority
@@ -161,7 +162,7 @@ export default function HeroSection() {
               >
                 <div className="relative w-14 h-14 rounded-full overflow-hidden shrink-0 border-2 border-brand-gold shadow-sm">
                   <Image
-                    src="/images/pastor-samselvaraj.jpg"
+                    src={getAssetPath('/images/pastor-samselvaraj.jpg')}
                     alt="Bishop Dr. J. Sam Selvaraj"
                     fill
                     className="object-cover"
