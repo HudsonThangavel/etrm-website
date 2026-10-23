@@ -1,0 +1,11 @@
+echo node_modules/ > .gitignore
+echo .next/ >> .gitignore
+echo .env*.local >> .gitignore
+Set-Content -Path .gitignore -Value @"
+node_modules/
+.next/
+.env*.local
+.env
+build/
+dist/
+"@
