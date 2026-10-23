@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: 'export',
+  basePath: '/etrm-website',
   images: {
+    unoptimized: true,
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
@@ -19,7 +22,7 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'i.ytimg.com',
-      }
+      },
     ],
   },
   experimental: {
