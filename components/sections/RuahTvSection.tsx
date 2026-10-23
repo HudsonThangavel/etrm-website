@@ -35,7 +35,7 @@ export default function RuahTvSection() {
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-red-600" />
               </span>
               <Tv className="w-4 h-4" />
-              <span>ETRM Media & TV Broadcast</span>
+              <span>ETRM Media & ETRM Melodies</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-navy dark:text-white tracking-tight">
               Watch. Listen. Be Transformed.
@@ -53,7 +53,7 @@ export default function RuahTvSection() {
               className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold text-sm px-5 py-2.5 rounded-full shadow-md hover:shadow-red-500/20 transition-all self-start md:self-auto"
             >
               <Youtube className="w-4 h-4 fill-white" />
-              <span>Subscribe @etrm-official9293</span>
+              <span>Subscribe ETRM - OFFICIAL</span>
               <ExternalLink className="w-3.5 h-3.5 opacity-80" />
             </a>
           </motion.div>

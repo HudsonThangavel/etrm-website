@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function MinistriesPage() {
   return (
-    <div className="pt-28 pb-20 overflow-hidden">
+    <div className="pt-36 sm:pt-32 pb-20 overflow-hidden">
       <section className="bg-gradient-to-b from-brand-sand via-white to-white dark:from-[#070D1F] dark:via-[#0A1226] dark:to-[#070D1F] py-16 border-b border-gray-100 dark:border-white/10 relative overflow-hidden transition-colors duration-300">
         <EtrmParticles count={14} color="gold" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4 relative z-10">

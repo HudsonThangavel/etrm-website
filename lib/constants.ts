@@ -3,7 +3,7 @@ import { MinistryItem, RhemaWord, Sermon, BankAccount, LocationDetail } from '@/
 export const SITE_INFO = {
   name: 'End Time Revival Mission',
   tagline: 'Word Changes World',
-  founder: 'Bishop Dr. J. Sam Selvaraj',
+  founder: 'Bishop. Dr. J. Sam Selvaraj',
   role: 'Founder & Senior Pastor',
   scriptureVerse: '“Not by might, nor by power, but by my Spirit.” — Zechariah 4:6',
   stats: {
@@ -27,6 +27,15 @@ export const SITE_INFO = {
   }
 };
 
+export const ASSOCIATE_PASTOR = {
+  name: 'Pastor Jim Williams',
+  formalName: 'Bro. S. Jim Williams',
+  role: 'Associate Pastor & Music Director',
+  tagline: 'Leading Worship, Equipping Generations for Revival',
+  image: '/images/pastor-jim.jpg',
+  youtubeMelodies: 'https://www.youtube.com/@ETRMMELODIES'
+};
+
 export const MINISTRIES_DATA: MinistryItem[] = [
   {
     id: '1',
@@ -35,7 +44,7 @@ export const MINISTRIES_DATA: MinistryItem[] = [
     title: 'Church',
     tagline: 'Spirit-filled worship & fellowship',
     shortDescription: 'Join thousands every Sunday for anointed worship, biblical apostolic preaching, and the tangible presence of the Holy Spirit across our revival centers.',
-    fullDescription: 'Ruah Church is a thriving, spirit-filled congregation dedicated to transforming believers into passionate disciples of Jesus Christ. With multiple services every Sunday across Chennai, each gathering features high-energy praise, deep prophetic worship led by anointed teams, and uncompromising biblical preaching by Bishop Dr. J. Sam Selvaraj and pastoral staff.',
+    fullDescription: 'Ruah Church is a thriving, spirit-filled congregation dedicated to transforming believers into passionate disciples of Jesus Christ. With multiple services every Sunday across Chennai, each gathering features high-energy praise, deep prophetic worship led by anointed teams, and uncompromising biblical preaching by Bishop. Dr. J. Sam Selvaraj and pastoral staff.',
     activities: [
       'Multi-lingual Sunday Worship Services (Tamil, English, Bilingual)',
       'Children Sunday School and Ruah Kids Discipleship',
@@ -52,10 +61,10 @@ export const MINISTRIES_DATA: MinistryItem[] = [
     num: '02',
     title: 'Media',
     tagline: 'ETRM MELODIES',
-    shortDescription: 'Sharing songs of faith, prayer, worship, and revival through original Christian music composed by Bishop Dr. J. Sam Selvaraj and the believers of End Time Revival Mission.',
-    fullDescription: 'ETRM MELODIES is the official music ministry of End Time Revival Mission, dedicated to glorifying God through songs inspired by His Word, love, faithfulness, and the hope we have in Jesus Christ. For over two decades, Bishop Dr. J. Sam Selvaraj, Founder and Pioneer of the ministry, has written and composed songs that have enriched the spiritual journey of the Church. The platform also features original compositions by ETRM believers, expressing personal testimonies, thanksgiving, worship, and devotion to God. Through worship songs, inspirational music, and heartfelt testimonies, ETRM MELODIES seeks to strengthen faith, encourage believers, preserve the ministry’s musical legacy, and draw hearts closer to God.',
+    shortDescription: 'Sharing songs of faith, prayer, worship, and revival through original Christian music composed by Bishop. Dr. J. Sam Selvaraj and the believers of End Time Revival Mission.',
+    fullDescription: 'ETRM MELODIES is the official music ministry of End Time Revival Mission, dedicated to glorifying God through songs inspired by His Word, love, faithfulness, and the hope we have in Jesus Christ. For over two decades, Bishop. Dr. J. Sam Selvaraj, Founder and Pioneer of the ministry, has written and composed songs that have enriched the spiritual journey of the Church. The platform also features original compositions by ETRM believers, expressing personal testimonies, thanksgiving, worship, and devotion to God. Through worship songs, inspirational music, and heartfelt testimonies, ETRM MELODIES seeks to strengthen faith, encourage believers, preserve the ministry’s musical legacy, and draw hearts closer to God.',
     activities: [
-      'Original Christian Songs Written and Composed by Bishop Dr. J. Sam Selvaraj',
+      'Original Christian Songs Written and Composed by Bishop. Dr. J. Sam Selvaraj',
       'Worship Songs and Music Productions by ETRM Believers',
       'Inspirational Songs Centered on Faith, Prayer, and Revival',
       'Music Videos and Gospel Song Releases',
@@ -108,7 +117,7 @@ export const MINISTRIES_DATA: MinistryItem[] = [
     title: 'Freedom',
     tagline: 'Freedom events & revival',
     shortDescription: 'Mass revival crusades, deliverance conventions, and open-air gatherings releasing miraculous breakthroughs.',
-    fullDescription: 'Freedom Events are catalytic encounters designed to break spiritual bondages, heal chronic sicknesses, and ignite supernatural awakening. Led by Bishop Dr. J. Sam Selvaraj with an apostolic team, these city-wide conferences draw tens of thousands eager to witness the demonstration of God’s power.',
+    fullDescription: 'Freedom Events are catalytic encounters designed to break spiritual bondages, heal chronic sicknesses, and ignite supernatural awakening. Led by Bishop. Dr. J. Sam Selvaraj with an apostolic team, these city-wide conferences draw tens of thousands eager to witness the demonstration of God’s power.',
     activities: [
       'Annual Freedom Revival Conferences & Conventions',
       'Open-Air Miracle & Healing Crusades across Tamil Nadu and India',
@@ -206,7 +215,7 @@ export const FEATURED_SONG = {
   id: 'karthar-uyarthiduvaar',
   title: 'KARTHAR UYARTHIDUVAAR!',
   tamilTitle: 'கர்த்தர் உயர்திடுவார்',
-  composer: 'Bishop Dr. J. Sam Selvaraj',
+  composer: 'Bishop. Dr. J. Sam Selvaraj',
   artists: 'Jim Williams & Beryl Williams',
   channel: 'ETRM MELODIES',
   youtubeId: 'IpC81S7zAOc',
@@ -222,7 +231,7 @@ export const LATEST_SERMONS: Sermon[] = [
     id: 's-song',
     title: 'KARTHAR UYARTHIDUVAAR | OFFICIAL SONG | Jim Williams & Beryl Williams',
     series: 'ETRM Melodies Release',
-    speaker: 'Bishop Dr. J. Sam Selvaraj & Jim Williams',
+    speaker: 'Bishop. Dr. J. Sam Selvaraj & Jim Williams',
     duration: '4:52',
     date: 'ETRM Melodies',
     youtubeId: 'IpC81S7zAOc',
@@ -232,7 +241,7 @@ export const LATEST_SERMONS: Sermon[] = [
     id: 's1',
     title: 'August Promise Service | Bishop. Dr. J. Sam Selvaraj',
     series: 'Monthly Promise Service',
-    speaker: 'Bishop Dr. J. Sam Selvaraj',
+    speaker: 'Bishop. Dr. J. Sam Selvaraj',
     duration: '1:15:20',
     date: 'August 2026',
     youtubeId: 'Kr9yRBhXxJQ',
@@ -242,7 +251,7 @@ export const LATEST_SERMONS: Sermon[] = [
     id: 's2',
     title: 'தேவனை மகிமைப்படுத்துங்கள் | DEVANAI MAGIMAIPADUTHUNGAL',
     series: 'ETRM Broadcast',
-    speaker: 'Bishop Dr. J. Sam Selvaraj',
+    speaker: 'Bishop. Dr. J. Sam Selvaraj',
     duration: '38:45',
     date: 'Recent Service',
     youtubeId: '9OMSR9fgViU',
@@ -262,7 +271,7 @@ export const LATEST_SERMONS: Sermon[] = [
     id: 's4',
     title: 'Christmas Special Sermon & Impartation',
     series: 'Special Convention',
-    speaker: 'Bishop Dr. J. Sam Selvaraj',
+    speaker: 'Bishop. Dr. J. Sam Selvaraj',
     duration: '58:30',
     date: 'Festival Service',
     youtubeId: 'jMGY7HhSteA',
@@ -272,7 +281,7 @@ export const LATEST_SERMONS: Sermon[] = [
     id: 's5',
     title: 'ARISE & SHINE - நீங்கள் செய்வீர்களானால், என் சிநேகிதராயிருப்பீர்கள்',
     series: 'Daily Arise & Shine',
-    speaker: 'Bishop Dr. J. Sam Selvaraj',
+    speaker: 'Bishop. Dr. J. Sam Selvaraj',
     duration: '18:40',
     date: 'Daily Message',
     youtubeId: '9Kc0uK6SjBc',
@@ -302,6 +311,14 @@ export const BANK_ACCOUNTS: BankAccount[] = [
 ];
 
 export const SERVICE_LOCATIONS: LocationDetail[] = [
+  {
+    name: 'End Time Revival Mission',
+    address: 'No. 15,Toovipuram, 1st Street (West) Tuticorin, Tamil Nadu 628003',
+    timing: [
+      '1st Sunday Service: 7:00 AM (Tamil)'
+    ],
+    googleMapsUrl: 'https://www.google.com/maps/place//@8.8021519,78.1337355,70m'
+  },
   {
     name: 'End Time Revival Mission',
     address: 'No. 15,Toovipuram, 1st Street (West) Tuticorin, Tamil Nadu 628003',

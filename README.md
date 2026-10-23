@@ -1,6 +1,6 @@
 # End Time Revival Mission — Next.js Web Application
 
-A full-fidelity, production-grade recreation of the official [End Time Revival Mission](https://ruahministries.org/) web platform. Built with modern web standards, Next.js App Router, TypeScript, Tailwind CSS, Motion animations, and Lucide icons.
+A full-fidelity, production-grade recreation of the official [End Time Revival Mission](https://etrmturicorin.com/) web platform. Built with modern web standards, Next.js App Router, TypeScript, Tailwind CSS, Motion animations, and Lucide icons.
 
 ---
 
@@ -9,7 +9,7 @@ A full-fidelity, production-grade recreation of the official [End Time Revival M
 1. **Brand & Visual Identity**:
    - Exact recreation of End Time Revival Mission' visual language, color tokens (`#0B132B`, `#1C2541`, `#E63946`, `#D4AF37`), typography hierarchy, and faith motifs.
    - Distinctive Zechariah 4:6 scripture strip and sticky multi-tier header with smooth backdrop blur.
-   - High-fidelity imagery representing worship crusades, Founder Bishop Dr. J. Sam Selvaraj, and the ~2,500 seat Tabernacle architectural project.
+   - High-fidelity imagery representing worship crusades, Founder Bishop. Dr. J. Sam Selvaraj, and the ~2,500 seat Tabernacle architectural project.
 
 2. **Complete Ministry Architecture**:
    - Dynamic App Router ministry pages for all 8 core divisions:

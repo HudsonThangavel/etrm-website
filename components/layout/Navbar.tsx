@@ -9,12 +9,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { MINISTRIES_DATA, SITE_INFO } from '@/lib/constants';
 import { ScrollProgressBar } from '@/components/animations';
 import { ThemeToggle } from '@/components/theme/ThemeToggle';
+import LanguageSelector from '@/components/translation/LanguageSelector';
+import { useLanguage } from '@/components/translation/LanguageContext';
 import { getAssetPath } from '@/lib/utils';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [ministriesOpen, setMinistriesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { isTamil } = useLanguage();
   const pathname = usePathname();
 
   useEffect(() => {
@@ -36,22 +39,22 @@ export default function Navbar() {
       <ScrollProgressBar />
 
       {/* Top Notification / Verse Strip */}
-      <div className="bg-brand-navy dark:bg-[#040813] text-gray-200 text-xs sm:text-sm py-2 px-4 border-b border-white/10 relative overflow-hidden transition-colors">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 relative z-10">
-          <p className="font-serif italic tracking-wide text-brand-goldLight text-center sm:text-left flex-1 sm:flex-none">
+      <div className="bg-brand-navy dark:bg-[#040813] text-gray-200 text-[11px] sm:text-xs py-1.5 px-3 sm:px-4 border-b border-white/10 relative overflow-hidden transition-colors">
+        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-1.5 sm:gap-2 relative z-10">
+          <p className="font-serif italic tracking-wide text-brand-goldLight text-center sm:text-left text-[11px] sm:text-xs leading-tight flex-1 sm:flex-none">
             {SITE_INFO.scriptureVerse}
           </p>
-          <div className="flex items-center space-x-4 mx-auto sm:mx-0">
+          <div className="flex items-center space-x-3 sm:space-x-4 mx-auto sm:mx-0">
             <a
               href={`tel:${SITE_INFO.contact.primaryPhone.replace(/\s+/g, '')}`}
-              className="flex items-center gap-1.5 hover:text-white transition-colors group"
+              className="flex items-center gap-1.5 hover:text-white transition-colors group text-[11px] sm:text-xs"
             >
               <motion.span
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
                 className="inline-flex"
               >
-                <Phone className="w-3.5 h-3.5 text-brand-gold group-hover:text-white" />
+                <Phone className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-brand-gold group-hover:text-white" />
               </motion.span>
               <span>{SITE_INFO.contact.primaryPhone}</span>
             </a>
@@ -65,13 +68,13 @@ export default function Navbar() {
       <nav
         className={`transition-all duration-300 ${
           scrolled
-            ? 'bg-white/95 dark:bg-[#070D1F]/95 backdrop-blur-md shadow-md py-3 border-b border-gray-100 dark:border-white/10'
-            : 'bg-white/90 dark:bg-[#070D1F]/90 backdrop-blur-sm py-4 border-b border-gray-100 dark:border-white/10'
+            ? 'bg-white/95 dark:bg-[#070D1F]/95 backdrop-blur-md shadow-md py-2 sm:py-3 border-b border-gray-100 dark:border-white/10'
+            : 'bg-white/90 dark:bg-[#070D1F]/90 backdrop-blur-sm py-2 sm:py-3.5 border-b border-gray-100 dark:border-white/10'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 flex items-center justify-between gap-2">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group py-0.5">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 group py-0.5 min-w-0 shrink">
             <motion.div
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
@@ -83,7 +86,7 @@ export default function Navbar() {
                 alt="End Time Revival Mission Church Logo"
                 width={80}
                 height={120}
-                className="h-12 sm:h-14 md:h-15 w-auto object-contain dark:hidden drop-shadow-sm transition-transform duration-200"
+                className="h-9 sm:h-12 md:h-14 w-auto object-contain dark:hidden drop-shadow-sm transition-transform duration-200"
                 priority
               />
               {/* Dark mode: radiant luminous gold logo */}
@@ -92,16 +95,26 @@ export default function Navbar() {
                 alt="End Time Revival Mission Church Logo"
                 width={80}
                 height={120}
-                className="h-12 sm:h-14 md:h-15 w-auto object-contain hidden dark:block drop-shadow-[0_0_12px_rgba(212,175,55,0.6)] transition-transform duration-200"
+                className="h-9 sm:h-12 md:h-14 w-auto object-contain hidden dark:block drop-shadow-[0_0_12px_rgba(212,175,55,0.6)] transition-transform duration-200"
                 priority
               />
             </motion.div>
-            <div className="flex flex-col justify-center">
-              <span className="text-xl sm:text-2xl font-extrabold tracking-tight text-brand-navy dark:text-white transition-colors leading-tight">
-                End Time Revival <span className="text-brand-accent">Mission</span>
-              </span>
-              <span className="text-[10px] sm:text-xs uppercase tracking-widest text-gray-500 dark:text-brand-goldLight font-semibold mt-0.5">
-                Word Changes World
+            <div className="flex flex-col justify-center min-w-0">
+              {isTamil ? (
+                <span className="text-xs sm:text-xl md:text-2xl font-extrabold tracking-tight text-brand-navy dark:text-white transition-colors leading-tight notranslate" translate="no">
+                  கடைசி கால <span className="text-brand-accent">எழுப்புதல் சபை</span>
+                </span>
+              ) : (
+                <span className="text-xs sm:text-xl md:text-2xl font-extrabold tracking-tight text-brand-navy dark:text-white transition-colors leading-tight">
+                  End Time Revival <span className="text-brand-accent">Mission</span>
+                </span>
+              )}
+              <span className="text-[8px] sm:text-[10px] md:text-xs uppercase tracking-widest text-gray-500 dark:text-brand-goldLight font-semibold mt-0.5 hidden sm:block">
+                {isTamil ? (
+                  <span className="notranslate" translate="no">வார்த்தை உலகை மாற்றும்</span>
+                ) : (
+                  <span>Word Changes World</span>
+                )}
               </span>
             </div>
           </Link>
@@ -114,7 +127,11 @@ export default function Navbar() {
                 pathname === '/' ? 'text-brand-accent' : 'text-gray-700 dark:text-gray-200'
               }`}
             >
-              Home
+              {isTamil ? (
+                <span className="notranslate" translate="no">முகப்பு</span>
+              ) : (
+                <span>Home</span>
+              )}
               {pathname === '/' && (
                 <motion.span
                   layoutId="activeNavIndicator"
@@ -206,6 +223,9 @@ export default function Navbar() {
 
           {/* Right Action Buttons */}
           <div className="hidden lg:flex items-center space-x-3">
+            {/* Language Selector (Google Translate) */}
+            <LanguageSelector />
+
             {/* Theme Toggle (Light / Dark) */}
             <ThemeToggle />
 
@@ -228,22 +248,23 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu & Theme Buttons */}
-          <div className="flex items-center gap-2 lg:hidden">
+          <div className="flex items-center gap-1 sm:gap-2 lg:hidden shrink-0">
+            <LanguageSelector />
             <ThemeToggle />
 
             <Link
               href="/give"
-              className="bg-brand-accent text-white text-xs font-bold px-3 py-2 rounded-full flex items-center gap-1 shadow"
+              className="bg-brand-accent text-white text-[11px] sm:text-xs font-bold px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-full flex items-center gap-1 shadow shrink-0"
             >
-              <Heart className="w-3 h-3 fill-white" />
+              <Heart className="w-3 h-3 fill-white shrink-0" />
               <span>Give</span>
             </Link>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-white/10 focus:outline-none transition-colors"
+              className="p-1.5 sm:p-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-white/10 focus:outline-none transition-colors shrink-0"
               aria-label="Toggle menu"
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
             </button>
           </div>
         </div>
@@ -263,7 +284,11 @@ export default function Navbar() {
               href="/"
               className="block px-3 py-2 rounded-md font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-white/10"
             >
-              Home
+              {isTamil ? (
+                <span className="notranslate" translate="no">முகப்பு</span>
+              ) : (
+                <span>Home</span>
+              )}
             </Link>
             <Link
               href="/about"
@@ -302,6 +327,11 @@ export default function Navbar() {
             >
               Contact Us
             </Link>
+
+            {/* Mobile Language Selection Grid */}
+            <div className="pt-3 pb-1 border-t border-gray-100 dark:border-white/10">
+              <LanguageSelector variant="mobile-grid" />
+            </div>
 
             <div className="pt-4 border-t border-gray-200 dark:border-white/10 space-y-3">
               <a

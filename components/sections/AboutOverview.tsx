@@ -23,7 +23,7 @@ export default function AboutOverview() {
             >
               <Image
                 src={getAssetPath('/images/pastor-samselvaraj.jpg')}
-                alt="Bishop Dr. J. Sam Selvaraj, Founder & Senior Pastor of End Time Revival Mission"
+                alt="Bishop. Dr. J. Sam Selvaraj, Founder & Senior Pastor of End Time Revival Mission"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 40vw"

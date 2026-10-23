@@ -7,11 +7,13 @@ import { Sparkles, Heart, ArrowRight, ShieldCheck } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { SITE_INFO } from '@/lib/constants';
 import { EtrmParticles, AnimatedCounter } from '@/components/animations';
+import { useLanguage } from '@/components/translation/LanguageContext';
 import { getAssetPath } from '@/lib/utils';
 
 export default function HeroSection() {
+  const { isTamil } = useLanguage();
   return (
-    <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-brand-sand via-white to-gray-50 dark:from-[#070D1F] dark:via-[#0A1226] dark:to-[#070D1F] transition-colors duration-300 overflow-hidden">
+    <section className="relative pt-[180px] sm:pt-[190px] md:pt-44 lg:pt-40 pb-16 sm:pb-20 md:pb-28 bg-gradient-to-b from-brand-sand via-white to-gray-50 dark:from-[#070D1F] dark:via-[#0A1226] dark:to-[#070D1F] transition-colors duration-300 overflow-hidden">
       {/* Dynamic Breath of God Ambient Particles & Ethereal Orbs */}
       <EtrmParticles count={24} color="gold" />
 
@@ -27,15 +29,22 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: -15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
-              className="inline-flex items-center gap-2 bg-brand-navy/5 dark:bg-white/10 text-brand-navy dark:text-gray-200 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide border border-brand-navy/10 dark:border-white/15 shadow-sm"
+              className="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-brand-navy/5 dark:bg-white/10 text-brand-navy dark:text-gray-200 px-3.5 sm:px-4 py-1.5 rounded-full text-[11px] sm:text-xs md:text-sm font-semibold tracking-wide border border-brand-navy/10 dark:border-white/15 shadow-sm max-w-full text-center sm:text-left"
             >
               <motion.div
                 animate={{ rotate: [0, 15, -15, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+                className="shrink-0"
               >
-                <Sparkles className="w-4 h-4 text-brand-gold fill-brand-gold" />
+                <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-brand-gold fill-brand-gold" />
               </motion.div>
-              <span>End Time Revival Mission — Experience the breath of God</span>
+              <span className="leading-snug">
+                {isTamil ? (
+                  <span className="notranslate" translate="no">கடைசி கால எழுப்புதல் சபை — தேவ ஆவியை உணருங்கள்</span>
+                ) : (
+                  <span>End Time Revival Mission — Experience the breath of God</span>
+                )}
+              </span>
             </motion.div>
 
             {/* Staggered Heading */}
@@ -45,9 +54,9 @@ export default function HeroSection() {
               transition={{ duration: 0.7, delay: 0.15, ease: [0.21, 0.47, 0.32, 0.98] }}
               className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-navy dark:text-white tracking-tight leading-[1.15]"
             >
-              Breath of God, <br />
+              Word Changes <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent via-red-600 to-amber-600">
-                Building Lives.
+                World.
               </span>
             </motion.h1>
 
@@ -163,7 +172,7 @@ export default function HeroSection() {
                 <div className="relative w-14 h-14 rounded-full overflow-hidden shrink-0 border-2 border-brand-gold shadow-sm">
                   <Image
                     src={getAssetPath('/images/pastor-samselvaraj.jpg')}
-                    alt="Bishop Dr. J. Sam Selvaraj"
+                    alt="Bishop. Dr. J. Sam Selvaraj"
                     fill
                     className="object-cover"
                     sizes="56px"

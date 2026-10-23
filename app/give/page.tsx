@@ -17,7 +17,7 @@ export default function GivePage() {
   };
 
   return (
-    <div className="pt-28 pb-20 overflow-hidden">
+    <div className="pt-36 sm:pt-32 pb-20 overflow-hidden">
       {/* Header Banner */}
       <section className="bg-gradient-to-b from-brand-sand via-white to-white dark:from-[#070D1F] dark:via-[#0A1226] dark:to-[#070D1F] py-14 border-b border-gray-100 dark:border-white/10 relative overflow-hidden transition-colors duration-300">
         <EtrmParticles count={14} color="gold" />
@@ -105,7 +105,7 @@ export default function GivePage() {
                 <motion.a
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  href="https://razorpay.me/@ruahministries"
+                  href="https://razorpay.me"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm py-3 px-4 rounded-xl shadow transition-colors"
@@ -159,7 +159,7 @@ export default function GivePage() {
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  onClick={() => handleCopy('ruahministries@hdfcbank', 'upi')}
+                  onClick={() => handleCopy('endtimereivalmission@testbank', 'upi')}
                   className="w-full inline-flex items-center justify-center gap-2 bg-gray-100 hover:bg-gray-200 dark:bg-white/10 dark:hover:bg-white/15 text-gray-800 dark:text-gray-200 font-bold text-xs py-2.5 px-4 rounded-xl transition-colors cursor-pointer"
                 >
                   {copiedAccount === 'upi' ? (
@@ -170,7 +170,7 @@ export default function GivePage() {
                   ) : (
                     <>
                       <Copy className="w-4 h-4" />
-                      <span>Copy UPI ID (ruahministries@hdfcbank)</span>
+                      <span>Copy UPI ID (endtimereivalmission@testbank)</span>
                     </>
                   )}
                 </motion.button>
@@ -207,7 +207,7 @@ export default function GivePage() {
                 <motion.a
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  href="https://paypal.me/ruahministries"
+                  href="https://paypal.me"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center gap-2 bg-brand-navy hover:bg-brand-dark dark:bg-brand-accent dark:hover:bg-red-700 text-white font-bold text-sm py-3 px-4 rounded-xl shadow transition-colors"
