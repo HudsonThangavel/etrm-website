@@ -52,8 +52,8 @@ export default function GivePage() {
               {[
                 'General Tithe & Offering',
                 'Tabernacle Building Expansion',
-                'Ruah TV Broadcast',
-                'Nessa Compassion Outreach',
+                'Revial Media Broadcast',
+                'Mercy Trust Compassion Outreach',
                 'North India Missions'
               ].map((fund) => (
                 <motion.button

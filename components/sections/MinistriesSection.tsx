@@ -17,7 +17,7 @@ export default function MinistriesSection() {
             We offer a variety of transformative ministries
           </h2>
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-            End Time Revival Mission provides a diverse range of spiritual ministries and services, including Worship, Ruah Television, Freedom Events, International Bible College, Prayer Tower, 24x7 Prayer Helpline, North India missions, Social media, Outreach and enriching literature.
+            End Time Revival Mission provides a diverse range of spiritual ministries and services, including Worship, Revival Media, Freedom Events, International Bible College, Prayer Tower, 24x7 Prayer Helpline, North India missions, Social media, Outreach and enriching literature.
           </p>
         </FadeIn>
 

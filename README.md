@@ -14,15 +14,15 @@ A full-fidelity, production-grade recreation of the official [End Time Revival M
 2. **Complete Ministry Architecture**:
    - Dynamic App Router ministry pages for all 8 core divisions:
      - **01 Church**: Spirit-filled worship & fellowship schedules.
-     - **02 Media**: Ruah Television & social streaming channels.
-     - **03 Nessa**: Compassion and community relief outreach.
+     - **02 Media**: Revival Media & social streaming channels.
+     - **03 Mercy Trust**: Compassion and community relief outreach.
      - **04 Prayer Tower**: 24/7 continuous intercession altar.
      - **05 Freedom**: Deliverance conventions and mass revivals.
      - **06 Bible College**: International theological training.
      - **07 Mission**: Reaching North India with indigenous church plants.
      - **08 24×7 Prayer Helpline**: Lifeline for round-the-clock telephone prayer.
 
-3. **Ruah TV & Rhema Word Hub**:
+3. **Revial Media & Rhema Word Hub**:
    - Daily bilingual Rhema Word declarations (Tamil & English) with scripture citations.
    - Latest Pulpit Sermon gallery with duration badges and video preview launcher.
    - "KARTHAR UYARTHIDUVAAR!" prophetic song release showcase with video modal.
