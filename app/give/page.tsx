@@ -145,7 +145,7 @@ export default function GivePage() {
                   <div className="w-40 h-40 bg-white rounded-xl shadow-inner flex flex-col items-center justify-center p-3 border border-gray-100">
                     <div className="w-full h-full bg-gradient-to-tr from-brand-navy/10 to-brand-accent/10 rounded-lg flex flex-col items-center justify-center text-center p-2">
                       <QrCode className="w-20 h-20 text-brand-navy mb-1" />
-                      <span className="text-[9px] font-mono font-bold text-brand-navy">UPI: ruah@hdfcbank</span>
+                      <span className="text-[9px] font-mono font-bold text-brand-navy">UPI: etrm@testbank</span>
                     </div>
                   </div>
                 </motion.div>

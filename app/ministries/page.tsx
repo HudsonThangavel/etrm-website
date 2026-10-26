@@ -8,7 +8,7 @@ import { FadeIn, StaggerContainer, StaggerItem, EtrmParticles } from '@/componen
 export const metadata: Metadata = {
   title: 'Our Ministries',
   description:
-    'Explore the 8 transformative ministries of End Time Revival Mission: Church, Media, Mercy Trust, Prayer Tower, Freedom Events, Bible College, North India Missions, and 24x7 Prayer Helpline.',
+    'Explore the 8 transformative ministries of End Time Revival Mission: Church, Media, Nessa, Prayer Tower, Freedom Events, Bible College, North India Missions, and 24x7 Prayer Helpline.',
 };
 
 export default function MinistriesPage() {

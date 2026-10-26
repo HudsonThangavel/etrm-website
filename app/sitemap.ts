@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { MINISTRIES_DATA } from '@/lib/constants';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://ruahministries.org';
+  const baseUrl = 'https://etrmtuticorin.com';
 
   const ministryUrls = MINISTRIES_DATA.map((m) => ({
     url: `${baseUrl}/ministries/${m.slug}`,

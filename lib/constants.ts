@@ -44,10 +44,10 @@ export const MINISTRIES_DATA: MinistryItem[] = [
     title: 'Church',
     tagline: 'Spirit-filled worship & fellowship',
     shortDescription: 'Join thousands every Sunday for anointed worship, biblical apostolic preaching, and the tangible presence of the Holy Spirit across our revival centers.',
-    fullDescription: 'End Time Revival Church is a thriving, spirit-filled congregation dedicated to transforming believers into passionate disciples of Jesus Christ. With multiple services every Sunday across Chennai, each gathering features high-energy praise, deep prophetic worship led by anointed teams, and uncompromising biblical preaching by Bishop. Dr. J. Sam Selvaraj and pastoral staff.',
+    fullDescription: 'Ruah Church is a thriving, spirit-filled congregation dedicated to transforming believers into passionate disciples of Jesus Christ. With multiple services every Sunday across Chennai, each gathering features high-energy praise, deep prophetic worship led by anointed teams, and uncompromising biblical preaching by Bishop. Dr. J. Sam Selvaraj and pastoral staff.',
     activities: [
       'Multi-lingual Sunday Worship Services (Tamil, English, Bilingual)',
-      'Children Sunday School and End Time Revival Kids Discipleship',
+      'Children Sunday School and Ruah Kids Discipleship',
       'Youth & Young Adults Breakthrough Fellowships',
       'Individual Anointing & Breakthrough Prayer Line after every service',
       'Mid-week Fasting and Deliverance Prayers'
@@ -76,12 +76,12 @@ export const MINISTRIES_DATA: MinistryItem[] = [
   },
   {
     id: '3',
-    slug: 'Mercy Trust',
+    slug: 'nessa',
     num: '03',
-    title: 'Mercy Trust',
+    title: 'Nessa',
     tagline: 'Outreach & compassion in action',
     shortDescription: 'The compassionate outreach arm of End Time Revival Mission bringing Christ’s love to widows, orphans, impoverished families, and disaster victims.',
-    fullDescription: 'Mercy Trust exemplifies love in action. Inspired by Christ’s call to serve the least of these, Mercy Trust provides consistent relief supplies, free medical assistance, elderly care, widow pensions, and educational sponsorships to underprivileged communities across urban slums and remote villages.',
+    fullDescription: 'Nessa exemplifies love in action. Inspired by Christ’s call to serve the least of these, Nessa provides consistent relief supplies, free medical assistance, elderly care, widow pensions, and educational sponsorships to underprivileged communities across urban slums and remote villages.',
     activities: [
       'Free Community Ration & Nutrition Kit Distribution',
       'Medical Camps, Eye Screenings, and Free Prescription Medicines',
@@ -99,7 +99,7 @@ export const MINISTRIES_DATA: MinistryItem[] = [
     title: 'Prayer Tower',
     tagline: 'Standing in the gap together',
     shortDescription: 'A sanctuary of continuous intercession where dedicated prayer warriors bring every petition before God’s throne of grace.',
-    fullDescription: 'Located prominently on 100 Feet Road in Tuticorin, the End Time Revival Praise Prayer Tower operates around the clock. Walk-in seekers receive personal, faith-filled prayer, counseling, and deliverance, while intercessory teams continually pray over thousands of prayer requests received from around the world.',
+    fullDescription: 'Located prominently on 100 Feet Road in Vadapalani, the Ruah Praise Prayer Tower operates around the clock. Walk-in seekers receive personal, faith-filled prayer, counseling, and deliverance, while intercessory teams continually pray over thousands of prayer requests received from around the world.',
     activities: [
       'Walk-In Individual and Family Prayer Counseling',
       '24-Hour Intercessory Altar for Nations, Churches, and Revival',
@@ -135,7 +135,7 @@ export const MINISTRIES_DATA: MinistryItem[] = [
     title: 'Bible College',
     tagline: 'International Bible College',
     shortDescription: 'Equipping emerging leaders, pastors, and evangelists with sound biblical doctrine, spiritual discipline, and practical ministry training.',
-    fullDescription: 'ETRM International Bible College offers rigorous biblical education combined with intensive Holy Spirit mentorship. Students from diverse cultural backgrounds receive theological grounding, homiletics training, church planting strategy, and field ministry experience.',
+    fullDescription: 'Ruah International Bible College offers rigorous biblical education combined with intensive Holy Spirit mentorship. Students from diverse cultural backgrounds receive theological grounding, homiletics training, church planting strategy, and field ministry experience.',
     activities: [
       'Diploma and Bachelor Programs in Ministry & Theology',
       'Intensive Leadership & Church Planting Practical Practicums',
@@ -171,7 +171,7 @@ export const MINISTRIES_DATA: MinistryItem[] = [
     title: '24×7 Prayer Helpline',
     tagline: 'Someone is always here to pray',
     shortDescription: 'A direct lifeline of hope available at all hours. Dial +91 98849 01777 or 044-22320122 to connect immediately with a prayer warrior.',
-    fullDescription: 'No matter the hour, no one needs to fight their battles alone. The Revival 24×7 Prayer Helpline connects callers facing grief, sickness, financial strain, marital crisis, or spiritual distress to trained intercessors who pray with biblical authority and deep empathy.',
+    fullDescription: 'No matter the hour, no one needs to fight their battles alone. The Ruah 24×7 Prayer Helpline connects callers facing grief, sickness, financial strain, marital crisis, or spiritual distress to trained intercessors who pray with biblical authority and deep empathy.',
     activities: [
       'Round-the-Clock Immediate Telephone Prayer Assistance',
       'WhatsApp Prayer Requests & Voice Note Intercession (+91 98849 01777)',

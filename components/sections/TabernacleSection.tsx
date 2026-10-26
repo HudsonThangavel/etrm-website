@@ -82,7 +82,7 @@ export default function TabernacleSection() {
               >
                 <Image
                   src={getAssetPath('/images/tabernacle-exterior.jpg')}
-                  alt="Architectural model of the planned Ruah tabernacle building exterior"
+                  alt="Architectural model of the planned End Time Revival Church building exterior"
                   fill
                   className="object-cover group-hover:scale-106 transition-transform duration-700"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -104,7 +104,7 @@ export default function TabernacleSection() {
               >
                 <Image
                   src={getAssetPath('/images/tabernacle-interior.jpg')}
-                  alt="Interior render of the planned Ruah tabernacle with worshippers"
+                  alt="Interior render of the planned End Time Revival Chruch with worshippers"
                   fill
                   className="object-cover group-hover:scale-106 transition-transform duration-700"
                   sizes="(max-width: 1024px) 100vw, 50vw"
