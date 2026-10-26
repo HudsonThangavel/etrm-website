@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'End Time Revival Mission - Word Changes World',
-    description: 'Experience the breath of God with Bishop. Dr. J. Sam Selvaraj and Ruah Church.',
+    description: 'Experience the breath of God with Bishop. Dr. J. Sam Selvaraj and End Time Revival Church.',
     images: ['/images/hero-worship.jpg'],
   },
   robots: {

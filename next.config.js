@@ -40,7 +40,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'ruahministries.org',
+        hostname: 'etrmtuticorin.com',
       },
       {
         protocol: 'https',

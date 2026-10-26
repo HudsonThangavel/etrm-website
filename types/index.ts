@@ -29,10 +29,7 @@ export interface Sermon {
   date: string;
   youtubeId: string;
   thumbnail: string;
-  description?: string;
-  channelTitle?: string;
 }
-
 
 export interface BankAccount {
   bankName: string;

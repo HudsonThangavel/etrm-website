@@ -70,7 +70,7 @@ export default function AboutPage() {
               </FadeIn>
               <FadeIn direction="up" delay={0.3}>
                 <p className="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
-                  End Time Revival Mission was birthed out of a divine mandate given to Bishop. Dr. J. Sam Selvaraj to release the life-giving breath of the Holy Spirit (Ruah in Hebrew: רוּחַ) into churches, families, and individuals burdened by despair, oppression, and sickness.
+                  End Time Revival Mission was birthed out of a divine mandate given to Bishop. Dr. J. Sam Selvaraj to release the life-giving breath of the Holy Spirit into churches, families, and individuals burdened by despair, oppression, and sickness.
                 </p>
               </FadeIn>
               <FadeIn direction="up" delay={0.4}>

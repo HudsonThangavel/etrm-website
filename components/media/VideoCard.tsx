@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Play, Youtube, ExternalLink, Calendar, User, Eye } from 'lucide-react';
@@ -17,12 +17,7 @@ export default function VideoCard({ video, onPlayOnSite, priority = false }: Vid
     video.thumbnail || `https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`
   );
 
-  useEffect(() => {
-    setImgSrc(video.thumbnail || `https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`);
-  }, [video.thumbnail, video.youtubeId]);
-
   const youtubeUrl = `https://www.youtube.com/watch?v=${video.youtubeId}`;
-
 
   return (
     <motion.div

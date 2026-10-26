@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://ruahministries.org/sitemap.xml',
+    sitemap: 'https://etrmtuticorin.com/sitemap.xml',
   };
 }
